@@ -10,6 +10,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var toymodelRouter = require('./routes/toymodel');
 var controllertoyRouter = require('./routes/controllertoy');
+var carRouter = require('./routes/Car');
 //var userRouter = require('./routes/user');
 
 var app = express();
@@ -48,6 +49,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/toymodel', toymodelRouter);
 app.use('/controllertoy', controllertoyRouter);
+app.use('/car', carRouter);
 //app.use('/user', userRouter);
 
 
