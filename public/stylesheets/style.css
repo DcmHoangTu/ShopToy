@@ -1,0 +1,28 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#toymodel:hover {
+  opacity: 70%;
+  border: 3px solid black;
+}
+
+#toymodel {
+  opacity: 100%;
+}
+
+#controllertoy:hover {
+  opacity: 70%;
+  border: 3px solid black;
+}
+
+#controllertoy {
+  opacity: 100%;
+}
+
+
+

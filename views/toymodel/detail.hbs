@@ -1,0 +1,129 @@
+<section class="py-2 mt-3 border col-lg-8 container bg-light">
+   <div class="container px-4 px-lg-5 my-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+         <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{ toymodel.image }}" alt=""></div>
+            <div class="col-md-6">
+               <h4 class="text-center text-uppercase">Toy Model Detail</h4>
+               <div class="small mb-1"></div>
+               <h6 class="display-6 fw-bolder mt-3">{{ toymodel.name }}</h6>
+               <div class="fs-5 mb-3 mt-3"> ${{ toymodel.price }}
+               </div>
+               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+               <div class="d-flex">
+                <form class="d-flex" action="/toymodel/cart" method="post">
+                  <input class="form-control text-center me-3" id="inputQuantity" type="quantity" value="1" min="1" max="{{ toymodel.quantity }}" style="max-width: 3rem" />
+                  <button class="btn btn-outline-dark " type="button"> Add to cart </button>
+                  <button style="margin-left: 10px;" class="btn btn-outline-dark " type="button"> Buy </button>
+                </form>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="py-1 mt-3">
+   <div class="container px-4 px-lg-5 mt-5">
+       <h2 class="fw-bolder mb-4">Related products</h2>
+          <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+               <div class="col mb-5">
+                  <div class="card h-100">
+                            <!-- Product image-->
+                      <img class="card-img-top" src="https://sneakerdaily.vn/wp-content/uploads/2022/06/bearbrick-the-beatles-anthology-bb-tba.jpg.webp" alt="..." />
+                            <!-- Product details-->
+                        <div class="card-body p-4">
+                           <div class="text-center">
+                                 <!-- Product name-->
+                              <h5 class="fw-bolder">Fancy Product</h5>
+                                    <!-- Product price-->
+                                 $2500.00 - $4200.00
+                           </div>
+                        </div>
+                            <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                           <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                           </div>
+                        </div>
+                    </div>
+               <div class="col mb-5">
+                  <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://sneakerdaily.vn/wp-content/uploads/2022/06/bearbrick-x-atmos-animal-print-1000-bb-aap.jpg.webp" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Special Item</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$4800.00</span>
+                                    $4500.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://sneakerdaily.vn/wp-content/uploads/2022/06/bearbrick-dylans-candy-bar-1000-bb-dcb.jpg.webp" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sale Item</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$5000.00</span>
+                                    $3800.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://sneakerdaily.vn/wp-content/uploads/2022/06/bearbrick-x-atmos-elephant-1000-bb-atel.jpg.webp" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Popular Item</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $4100.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>

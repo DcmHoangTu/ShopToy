@@ -1,0 +1,30 @@
+<form action="/controllertoy/edit/{{ controllertoy._id }}" method="post" class="container col-md-8 card bg-light mt-3">
+    <h1 class="text text-danger text-uppercase text-center mt-3">Edit Controller Toy</h1>
+    <div class="form-group mt-3">
+        <label for="name" class="text-primary">Name</label>
+        <input class="form-control" type="text" name="name" required minlength="3" maxlength="100" value="{{ controllertoy.name }}" disable>
+    </div>
+    <div class="form-group mt-3">
+        <label for="brand" class="text-primary">Brand</label>
+        <input class="form-control" type="text" name="brand" required value="{{ controllertoy.brand }}">
+    </div>
+    <div class="form-group mt-3">
+        <label for="price" class="text-primary">Price</label>
+        <input class="form-control" type="number" name="price" required value="{{ controllertoy.price }}">
+    </div>
+    <div class="form-group mt-3">
+        <label for="quantity" class="text-primary">Quantity</label>
+        <input class="form-control" type="number" name="quantity" required value="{{ controllertoy.quantity }}">
+    </div>
+    <div class="form-group mt-3">
+        <label for="image" class="text-primary">Image</label>
+        <img src="{{ controllertoy.image }}" width="150" height="150"> <br> <br>
+        <br>
+        <input type="url" class="form-control" name="image" required value="{{ controllertoy.image }}">
+    </div>
+    <div class="form-group mt-3 text-center">
+        <input type="submit" value="Edit" class="btn btn-primary">
+        <input type="reset" value="Clear" class="btn btn-success">
+    </div>
+
+</form>

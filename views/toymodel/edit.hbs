@@ -1,0 +1,34 @@
+<form action="/toymodel/edit/{{ toymodel._id }}" method="post" class="container col-md-8 card bg-light mt-3">
+    <h1 class="text text-danger text-uppercase text-center mt-3">Edit Toy Model</h1>
+    <div class="form-group mt-3">
+        <label for="name" class="text-primary">Name</label>
+        <input class="form-control" type="text" name="name" required minlength="3" maxlength="30" value="{{ toymodel.name }}" disable>
+    </div>
+    <div class="form-group mt-3">
+        <label for="size" class="text-primary">Size</label>
+        <input class="form-control" type="text" name="size" required value="{{ toymodel.size }}">
+    </div>
+    <div class="form-group mt-3">
+        <label for="material" class="text-primary">Material</label>
+        <input class="form-control" type="text" name="material" required value="{{ toymodel.material }}">
+    </div>
+    <div class="form-group mt-3">
+        <label for="price" class="text-primary">Price</label>
+        <input class="form-control" type="number" name="price" required value="{{ toymodel.price }}">
+    </div>
+    <div class="form-group mt-3">
+        <label for="quantity" class="text-primary">Quantity</label>
+        <input class="form-control" type="number" name="quantity" required value="{{ toymodel.quantity }}">
+    </div>
+    <div class="form-group mt-3">
+        <label for="image" class="text-primary">Image</label>
+        <img src="{{ toymodel.image }}" width="150" height="150"> <br> <br>
+        <br>
+        <input type="url" class="form-control" name="image" required value="{{ toymodel.image }}">
+    </div>
+    <div class="form-group mt-3 text-center">
+        <input type="submit" value="Edit" class="btn btn-primary">
+        <input type="reset" value="Clear" class="btn btn-success">
+    </div>
+
+</form>
