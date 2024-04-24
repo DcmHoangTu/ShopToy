@@ -43,14 +43,14 @@ router.get('/add', (req, res) => {
 
  router.get('/edit/:id', async (req, res) => {
     var id = req.params.id;
-    var Car = await CarToyModel.findById(id);
+    var car = await CarToyModel.findById(id);
     res.render('car/edit', { car : car });
  })
  
  router.post('/edit/:id', async (req, res) => {
     var id = req.params.id;
     var car = req.body;
-    await CarToyModel.findByIdAndUpdate(id, controllertoy);
+    await CarToyModel.findByIdAndUpdate(id, car);
     console.log('Update Car Toy succeed !');
     res.redirect('/car');
  })
@@ -58,13 +58,13 @@ router.get('/add', (req, res) => {
  router.post('/search', async(req, res) => {
     var keyword = req.body.name;
     var car = await CarToyModel.find({name: new RegExp(keyword, "i")});
-    res.render('car/list', {CarToyModel : CarToyModel});
+    res.render('car/list', {car : car});
 
 })
 router.post('/search1', async(req, res) => {
     var keyword = req.body.name;
     var car = await CarToyModel.find({name: new RegExp(keyword, "i")});
-    res.render('car/index', {CarToyModel : CarToyModel});
+    res.render('car/index', {car : car});
 
 })
 
